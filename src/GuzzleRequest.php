@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Library;
 
-use GuzzleHttp\Exception\GuzzleException;
 use JsonException;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 
 class GuzzleRequest implements ApiRequest
 {

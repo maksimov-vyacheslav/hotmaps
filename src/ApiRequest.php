@@ -18,5 +18,10 @@ interface ApiRequest
      *
      * @throws ApiRequestException
      */
-    public function sendRequest(string $requestType, string $apiMethod, array $queryParams, array $postParams = []): array;
+    public function sendRequest(
+        string $requestType,
+        string $apiMethod,
+        array $queryParams,
+        array $postParams = []
+    ): array;
 }
