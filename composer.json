@@ -1,0 +1,9 @@
+{
+    "name": "hotmapstest/client",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "vlucas/phpdotenv": "^5.3",
+        "phpunit/phpunit": "^9.5"
+    }
+}
