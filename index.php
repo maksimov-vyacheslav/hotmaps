@@ -4,6 +4,7 @@ declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
 use Library\ApiClient;
+use Library\FileLogger;
 use Library\GuzzleRequest;
 
 
@@ -14,7 +15,9 @@ $dotenv->load();
 
 $httpClient = new GuzzleRequest($_ENV['API_URL']);
 
-$client = new ApiClient($httpClient);
+$logger = new FileLogger('log.log');
+
+$client = new ApiClient($httpClient, $logger);
 
 $result = $client->auth($_ENV['API_LOGIN'], $_ENV['API_PASSWORD']);
 

@@ -13,7 +13,7 @@ class FileLogger implements Logger
      *
      * @param string $logFilePath
      */
-    private function __construct(string $logFilePath)
+    public function __construct(string $logFilePath)
     {
         $this->logFilePath = $logFilePath;
     }
