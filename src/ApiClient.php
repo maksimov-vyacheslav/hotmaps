@@ -88,7 +88,7 @@ class ApiClient
             $userData
         );
 
-        return $result['status'] === 'Ok';
+        return $result['status'] === 'OK';
     }
 
     /**
